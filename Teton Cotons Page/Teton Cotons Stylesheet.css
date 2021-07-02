@@ -38,3 +38,31 @@ ul {
 	list-style-type: square;
 	list-style-image: url("Bullet Point.png");	
 }
+/*Gallery Border*/
+.gallery {
+	text-align: center;
+	width: 1355px;
+	height: 1000px;
+	margin-top: 35px;
+	margin-left: 250px;
+	background-color: #faebd7;
+    border: 2px solid black;
+    border-radius: 5%;
+}
+
+/*Gallery Pics*/
+.gallery .galpic:nth-child(-n+9) {
+    float: left;
+    width: 180px;
+    height: 260px;
+	margin-left: 34px;
+	margin-bottom: 130px;
+    border: 3px solid black;
+    cursor: pointer;
+}
+
+.gallery .galpic:nth-child(-n+9) img {
+	width: 180px;
+    height: 260px;
+}
+
