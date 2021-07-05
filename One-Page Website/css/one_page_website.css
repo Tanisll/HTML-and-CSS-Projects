@@ -38,15 +38,6 @@ CONTACT US
     border-radius: 15px;
 }
 
-.contact-us {
-    width: 60%;
-    padding: 10px;
-    border-radius: 8px;
-    margin: 0px auto;
-    background-color: rgb(96, 190, 221);
-    box-shadow: -1px -1px 1px 0 rgba(0, 0, 0, 0.1), 1px 2px 10px 0 rgba(0, 0, 0, .5);
-}
-
 .container h1 {
     text-align: left; 
     color: MidnightBlue; 
