@@ -1,4 +1,5 @@
 /* Headers */
+
 .p1 {
 	color: MidnightBlue;
 	font-size: 50px;
@@ -9,18 +10,22 @@
 	margin-bottom: 15px;
 	margin-top: 15px;
 }
+
 /* Body Text */
+
 .p2 {
 	color: ForestGreen;
 	font-size: 20px;
 	border: 20px solid transparent;
 	border-image: url('Body Text Boarder.png') 20 20 round;
 	padding: 10px;
-	margin-left: 300px;
-	margin-right: 300px;
+	margin-left: 200px;
+	margin-right: 200px;
 	text-indent: 50px;
 }
+
 /* Navigation Bar */
+
 .p3 {
 	color: MidnightBlue;
 	font-size: 35px;
@@ -33,12 +38,32 @@
 	word-spacing: 1px;
 	font-variant: small-caps;
 }
+
+.p3 a:hover {
+        text-shadow: 0 0 18px rgb(36, 36, 255);
+}
+
 /*Bullet Points*/
+
 ul {
 	list-style-type: square;
 	list-style-image: url("Bullet Point.png");	
 }
+
+/*Our Dogs Page background*/
+
+.odbackground {
+	text-align: center;
+	width: 1355px;
+	height: 1350px;
+	margin: 35px auto;
+	background-color: #faebd7;
+    border: 2px solid black;
+    border-radius: 50px;
+}
+
 /*Gallery Border*/
+
 .gallery {
 	text-align: center;
 	width: 1355px;
@@ -46,10 +71,11 @@ ul {
 	margin: 35px auto;
 	background-color: #faebd7;
     border: 2px solid black;
-    border-radius: 5%;
+    border-radius: 50px;
 }
 
 /*Gallery Pics*/
+
 .gallery .galpic:nth-child(-n+9) {
     float: left;
     width: 180px;
@@ -65,3 +91,157 @@ ul {
     height: 260px;
 }
 
+/*Contact Form*/
+
+.reservation {
+    width: 1355px;
+    height: 750px;
+    border-radius: 50px;
+    margin: 35px auto;
+    border: 2px solid black;
+    background-color: #faebd7;
+}
+
+.reservation h2 {
+    width: 70%;
+    text-align: center;
+    margin: 0 auto;
+    color: #13161b;
+    font-weight: 500;
+    font-size: 1.3em;
+    letter-spacing: 0pt;
+    word-spacing: 0pt;
+}
+
+.reservation h2 span {
+    width: 70%;
+    text-align: center;
+    margin: 0 auto;
+    color: #13161b;
+    font-weight: 900;
+    font-size: 1.5em;
+    font-variant: small-caps;
+    letter-spacing: .4pt;
+    word-spacing: .3pt;
+}
+
+.reservation p{
+    color: #13161b;
+    width: 50%;
+    margin: 0 auto;
+}
+
+.reservation form {
+    font-size: 15px;
+    outline: none;
+    font-weight: 600;
+    color: #8d8e8f;
+    padding: 12px 12px;
+    width: 50%;
+    border: 1px solid #8d8d8d;
+    margin: 2% auto;
+    border-radius: 7px;
+    background: rgb(227, 222, 222);
+    box-shadow: 2px 3px 3px 0px rgba(0, 0, 0, 0.3);
+    font-family: 'Raleway', sans-serif;
+}
+
+.reservation input[type="text"] {
+    font-size: 15px;
+    outline: none;
+    font-weight: 600;
+    color: midnightblue;
+    padding: 2% 1% 2% 7%;
+    width: 80%;
+    border-top: 1px solid #090b0d;
+    border-right: 2px solid #424549;
+    border-bottom: 2px solid #424549;
+    border-left: 1px solid #090b0d;
+    margin: 10px 1em;
+    border-radius: 7px;
+    background: #ffffff;
+    box-shadow: inset 0px 3px 0px 0px rgba(5, 5, 5, .15);
+    font-family: 'Raleway', sans-serif;
+}
+
+.reservation input[type="text"]:hover {
+    box-shadow: 0 0 18px midnightblue;
+}
+
+.form-spacer {
+    padding: 30px 39px;
+}
+
+.terms {
+    margin: 30px 1px 0 0;
+    padding-left: 52px;
+    font-size: 14px;
+    line-height: 5px;
+    color: #000;
+    cursor: pointer;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 600;
+    position: relative;
+    display: inline;
+    float: right;
+    margin-top: 8%;
+}
+
+.terms:hover {
+    color: rgb(197, 131, 8);
+    text-decoration: underline;
+}
+
+.submit input[type="submit"] {
+    color: rgb(225, 225, 225);
+    cursor: pointer;
+    border: none;
+    font-weight: 900;
+    outline: none;
+    text-align: center;
+    font-family: 'Raleway', sans-serif;
+    margin: 0px 3%;
+    padding: 7px 0px;
+    width: 25%;
+    font-size: 18px;
+    transition: boarder-color 0.3s color 0.3s background-color 0.3s;
+    border-radius: 7px;
+    background-color: #797a7b;
+    box-shadow: 1px 1px 4px 0 rgba(0, 0, 0, 0.3);
+}
+
+.submit input[type="submit"]:hover {
+    color: #000;
+    background-color: #8d8e8f;
+    box-shadow: inset 1px 2px 15px 0 rgba(0, 0, 0, 0.5);
+}
+
+.reservation input[type="email"] {
+    font-size: 15px;
+    outline: none;
+    font-weight: 600;
+    color: midnightblue;
+    padding: 2% 1% 2% 7%;
+    width: 80%;
+    border-top: 1px solid #090b0d;
+    border-right: 2px solid #424549;
+    border-bottom: 2px solid #424549;
+    border-left: 1px solid #090b0d;
+    margin: 10px 1em;
+    border-radius: 7px;
+    background: #ffffff;
+    box-shadow: inset 0px 3px 0px 0px rgba(5, 5, 5, .15);
+    font-family: 'Raleway', sans-serif;
+}
+
+.reservation input[type="email"]:hover {
+    box-shadow: 0 0 18px midnightblue;
+}
+
+.rsvp-text {
+    text-align: center;
+}
+
+.heading-padding {
+    padding-bottom: 40px;
+}
