@@ -17,7 +17,7 @@
 	color: ForestGreen;
 	font-size: 20px;
 	border: 20px solid transparent;
-	border-image: url('Body Text Boarder.png') 20 20 round;
+	border-image: url('./Images/Body\ Text\ Boarder.png') 20 20 round;
 	padding: 10px;
 	margin-left: 200px;
 	margin-right: 200px;
