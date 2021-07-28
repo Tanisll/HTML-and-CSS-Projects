@@ -4,48 +4,174 @@
 		<title>World of Fish</title>
 		<meta charset="utf-8" name="Jacob Loveland" content="One-Page Website">
 		<link rel="stylesheet" type="text/css" href="./css/one_page_website.css">
+		<script src="./js/main.js" defer></script>
 	</head>
 	<header>
 		<h1>Welcome to the World of Fish!</h1>
 	</header>
 	<body>
-		<main>
-			<nav>
-				<p>Check out our <a href="#Gallary">Gallary!</a></p>
-				<p>We also have a few very informative <a href="#Video">Videos!</a></p>
-				<p>If you have any questions, please feel free to <a href="#Contact Us">Contact Us!</a></p>
-			</nav>
-			<div id="Gallary">
-				<h2>These are my top 9 aquarium ready fish!</h2>
-				<img width="560" height="315" src="https://www.fishkeepingworld.com/wp-content/uploads/2018/12/Threadfin-Butterflyfish.jpg?ezimgfmt=ng:webp/ngcb1">
-				<img width="560" height="315" src="https://www.fishkeepingworld.com/wp-content/uploads/2018/12/Mandarinfish.jpg?ezimgfmt=ng:webp/ngcb1">
-				<img width="560" height="315" src="https://www.fishkeepingworld.com/wp-content/uploads/2018/12/Clown-Triggerfish.jpg?ezimgfmt=ng:webp/ngcb1">
-				<img width="560" height="315" src="https://www.fishkeepingworld.com/wp-content/uploads/2018/12/Regal-Tang.jpg?ezimgfmt=ng:webp/ngcb1">
-				<img width="560" height="315" src="https://www.fishkeepingworld.com/wp-content/uploads/2018/12/French-Angelfish.jpg?ezimgfmt=ng:webp/ngcb1">
-				<img width="560" height="315" src="https://www.fishkeepingworld.com/wp-content/uploads/2018/12/Juvenile-Emperor-Angelfish.jpg?ezimgfmt=ng:webp/ngcb1">
-				<img width="560" height="315" src="https://www.fishkeepingworld.com/wp-content/uploads/2018/12/Lionfish.jpg?ezimgfmt=ng:webp/ngcb1">
-				<img width="560" height="315" src="https://www.fishkeepingworld.com/wp-content/uploads/2018/12/Picasso-Triggerfish.jpg?ezimgfmt=ng:webp/ngcb1">
-				<img width="560" height="315" src="https://www.fishkeepingworld.com/wp-content/uploads/2018/12/Clownfish.jpg?ezimgfmt=ng:webp/ngcb1">
+		<nav>
+			<p>Check out our <a href="#Gallary">Gallary!</a></p>
+			<p>We also have a few very informative <a href="#Video">Videos!</a></p>
+			<p>If you have any questions, please feel free to <a href="#contact">Contact Us!</a></p>
+		</nav>
+
+		<div id="Gallary">
+			<h2>These are my top 9 aquarium ready fish!</h2>
+			<h3 style="text-align: center;"><u>Click an image to make it larger!</u></h3>
+		</div>
+
+		<!-- Light Box -->
+
+		<div class="row">
+			<div class="column">
+			  <img src="./images/fullSized/Threadfin-Butterflyfish.PNG" style="width:100%" onclick="openModal();currentSlide(1)" class="hover-shadow cursor">
 			</div>
-			<div id="Video">
-				<p><iframe width="1160" height="615" src="https://www.youtube.com/embed/E1mgJxJG1uM?start=4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></p>
-				<p><iframe width="1160" height="615" src="https://www.youtube.com/embed/AlUv9SRB_g8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></p>
+			<div class="column">
+			  <img src="./images/fullSized/Regal-Tang.PNG" style="width:100%" onclick="openModal();currentSlide(2)" class="hover-shadow cursor">
 			</div>
-			<div id="contact">
-				<div class="container">
-					<h1>Contact Us</h1>
-					<form action="mailto:Inquiries@FishWorld.com" method="get">
-						<input class="contact-us" type="text" id="fname" name="fname" placeholder="First Name">
-						<input class="contact-us"type="text" id="lname" name="lname" placeholder="Last Name">
-						<input class="contact-us"type="text" id="email" name="email" placeholder="Email Adress">
-						<input class="contact-us"type="text" id="question" name="question" placeholder="Please type your questions here">
-						<input class="contact-us"type="submit" value="Submit">
-					</form>
-				</div>
+			<div class="column">
+			  <img src="./images/fullSized/Picasso-Triggerfish.PNG" style="width:100%" onclick="openModal();currentSlide(3)" class="hover-shadow cursor">
 			</div>
-		</main>
+			<div class="column">
+			  <img src="./images/fullSized/Mandarinfish.PNG" style="width:100%" onclick="openModal();currentSlide(4)" class="hover-shadow cursor">
+			</div>
+			<div class="column">
+				<img src="./images/fullSized/Lionfish.PNG" style="width:100%" onclick="openModal();currentSlide(4)" class="hover-shadow cursor">
+			</div>
+			<div class="column">
+				<img src="./images/fullSized/Juvenile-Emperor-Angelfish.PNG" style="width:100%" onclick="openModal();currentSlide(4)" class="hover-shadow cursor">
+			</div>
+			<div class="column">
+				<img src="./images/fullSized/French-Angelfish.PNG" style="width:100%" onclick="openModal();currentSlide(4)" class="hover-shadow cursor">
+			</div>
+			<div class="column">
+				<img src="./images/fullSized/Clownfish.PNG" style="width:100%" onclick="openModal();currentSlide(4)" class="hover-shadow cursor">
+			</div>
+			<div class="column">
+				<img src="./images/fullSized/Clown-Triggerfish.PNG" style="width:100%" onclick="openModal();currentSlide(4)" class="hover-shadow cursor">
+			</div>
+		</div>
+		  
+		  <div id="myModal" class="modal">
+			<span class="close cursor" onclick="closeModal()">&times;</span>
+			<div class="modal-content">
+		  
+			  <div class="mySlides">
+				<div class="numbertext">1 / 9</div>
+				<img src="./images/fullSized/Threadfin-Butterflyfish.PNG" style="width:100%">
+			  </div>
+		  
+			  <div class="mySlides">
+				<div class="numbertext">2 / 9</div>
+				<img src="./images/fullSized/Regal-Tang.PNG" style="width:100%">
+			  </div>
+		  
+			  <div class="mySlides">
+				<div class="numbertext">3 / 9</div>
+				<img src="./images/fullSized/Picasso-Triggerfish.PNG" style="width:100%">
+			  </div>
+			  
+			  <div class="mySlides">
+				<div class="numbertext">4 / 9</div>
+				<img src="./images/fullSized/Mandarinfish.PNG" style="width:100%">
+			  </div>
+
+			  <div class="mySlides">
+				<div class="numbertext">5 / 9</div>
+				<img src="./images/fullSized/Lionfish.PNG" style="width:100%">
+			  </div>
+
+			  <div class="mySlides">
+				<div class="numbertext">6 / 9</div>
+				<img src="./images/fullSized/Juvenile-Emperor-Angelfish.PNG" style="width:100%">
+			  </div>
+
+			  <div class="mySlides">
+				<div class="numbertext">7 / 9</div>
+				<img src="./images/fullSized/French-Angelfish.PNG" style="width:100%">
+			  </div>
+
+			  <div class="mySlides">
+				<div class="numbertext">8 / 9</div>
+				<img src="./images/fullSized/Clownfish.PNG" style="width:100%">
+			  </div>
+
+			  <div class="mySlides">
+				<div class="numbertext">9 / 9</div>
+				<img src="./images/fullSized/Clown-Triggerfish.PNG" style="width:100%">
+			  </div>
+
+			  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+			  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+		  
+			  <div class="caption-container">
+				<p id="caption"></p>
+			  </div>
+		  
+		  
+			  <div class="column">
+				<img class="demo cursor" src="./images/fullSized/Threadfin-Butterflyfish.PNG" style="width:100%" onclick="currentSlide(1)" alt="Threadfin Butterflyfish">
+			  </div>
+			  <div class="column">
+				<img class="demo cursor" src="./images/fullSized/Regal-Tang.PNG" style="width:100%" onclick="currentSlide(2)" alt="Regal Tang">
+			  </div>
+			  <div class="column">
+				<img class="demo cursor" src="./images/fullSized/Picasso-Triggerfish.PNG" style="width:100%" onclick="currentSlide(3)" alt="Picasso Triggerfish">
+			  </div>
+			  <div class="column">
+				<img class="demo cursor" src="./images/fullSized/Mandarinfish.PNG" style="width:100%" onclick="currentSlide(4)" alt="Mandarinfish">
+			  </div>
+			  <div class="column">
+				<img class="demo cursor" src="./images/fullSized/Lionfish.PNG" style="width:100%" onclick="currentSlide(5)" alt="Lionfish">
+			  </div>
+			  <div class="column">
+				<img class="demo cursor" src="./images/fullSized/Juvenile-Emperor-Angelfish.PNG" style="width:100%" onclick="currentSlide(6)" alt="Juvenile Emperor Angelfish">
+			  </div>
+			  <div class="column">
+				<img class="demo cursor" src="./images/fullSized/French-Angelfish.PNG" style="width:100%" onclick="currentSlide(7)" alt="French Angelfish">
+			  </div>
+			  <div class="column">
+				<img class="demo cursor" src="./images/fullSized/Clownfish.PNG" style="width:100%" onclick="currentSlide(8)" alt="Clownfish">
+			  </div>
+			  <div class="column">
+				<img class="demo cursor" src="./images/fullSized/Clown-Triggerfish.PNG" style="width:100%" onclick="currentSlide(9)" alt="Clown Triggerfish">
+			  </div>
+
+			</div>
+		  </div>
+		  
+
+		<!-- End Light Box-->
+
+		<!-- Video Section-->
+
+		<div id="Video">
+			<p><iframe width="1160" height="615" src="https://www.youtube.com/embed/E1mgJxJG1uM?start=4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></p>
+			<p><iframe width="1160" height="615" src="https://www.youtube.com/embed/AlUv9SRB_g8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></p>
+		</div>
+
+		<!-- End Video Section-->
+
+		<!-- Contact Us -->
+
+		<div id="contact">
+			<div class="container">
+				<h1>Contact Us</h1>
+				<p style="text-align: left;"> Please feel free to message us with any questions you may have!</p>
+				<form action="mailto:Inquiries@FishWorld.com" method="get">
+					<input class="contact-us" type="text" id="fname" name="fname" placeholder="First Name">
+					<input class="contact-us"type="text" id="lname" name="lname" placeholder="Last Name">
+					<input class="contact-us"type="text" id="email" name="email" placeholder="Email Adress">
+					<input class="contact-us"type="text" id="question" name="question" placeholder="Please type your questions here">
+					<input class="contact-us"type="submit" value="Submit">
+				</form>
+			</div>
+		</div>
+
+		<!-- End Contact Us -->
+
 		<footer>
-			<p> Please feel free to message us with any questions you may have!</p>
 			<p>www.WorldofFish.com &nbsp;|&nbsp; &copy; 2021
 		</footer>
 	</body>
