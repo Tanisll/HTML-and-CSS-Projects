@@ -58,27 +58,27 @@
                     <div id="Slideshow_Background"> 
                         <div id="Slideshow_Container">
                             <!-- Slide 1 of 5 -->
-                            <div class="mySlides3 fade">
+                            <div class="mySlides1 fade">
                                 <img class="Slideshow_Images" src="images/profile.jpg" alt="Jacob Loveland">
                                 <div class="text">I'm available to assist you on your project!</div>
                             </div>
                             <!-- Slide 2 of 5 -->
-                            <div class="mySlides3 fade">
+                            <div class="mySlides1 fade">
                                 <img class="Slideshow_Images" src="images/HTML_CSS_and_JavaScript.jpeg" alt="HTML, CSS, and JS logos"> 
                                 <div class="text">I am a full-stack software developer,<br> trained in:<br>HTML, CSS, JavaScript,</div>
                             </div>
                             <!-- Slide 3 of 5 -->
-                            <div class="mySlides3 fade">
+                            <div class="mySlides1 fade">
                                 <img class="Slideshow_Images" src="images/Python.png" alt="Python logo">
                                 <div class="text">the popular programming language Python,</div>
                             </div>
                             <!-- Slide 4 of 5 -->
-                            <div class="mySlides3 fade">
+                            <div class="mySlides1 fade">
                                 <img class="Slideshow_Images" src="images/SQL_and_Database.jpg" alt="SQL logo"> 
                                 <div class="text">back end development, databases and SQL.</div>
                             </div>
                             <!-- Slide 5 of 5 -->
-                            <div class="mySlides3 fade">
+                            <div class="mySlides1 fade">
                                 <img class="Slideshow_Images" src="images/Send_Email.png" alt="Email Image"> 
                                 <div class="text"><a class="white-text" onclick="openForm()" href="#Contact">Contact me now!</a></div> 
                             </div>
@@ -301,7 +301,72 @@
 			</div>
         </div>
 
+        <!--Modal to make Checkbook App pictures larger-->
+        <div id="myModal3" class="modal">
+			<span class="close cursor" onclick="closeModal3()">&times;</span>
+			<div class="modal-content">
+		  
+                <div class="mySlides3">
+                    <div class="numbertext">1 / 6</div>
+                    <img src="images/Checkbook-1.png" style="width:100%">
+                </div>
+            
+                <div class="mySlides3">
+                    <div class="numbertext">2 / 6</div>
+                    <img src="images/Checkbook-2.png" style="width:100%">
+                </div>
+            
+                <div class="mySlides3">
+                    <div class="numbertext">3 / 6</div>
+                    <img src="images/Checkbook-3.png" style="width:100%">
+                </div>
+                
+                <div class="mySlides3">
+                    <div class="numbertext">4 / 6</div>
+                    <img src="images/Checkbook-4.png" style="width:100%">
+                </div>
 
+                <div class="mySlides3">
+                    <div class="numbertext">5 / 6</div>
+                    <img src="images/Checkbook-5.png" style="width:100%">
+                </div>
+
+                <div class="mySlides3">
+                    <div class="numbertext">6 / 6</div>
+                    <img src="images/Checkbook-6.png" style="width:100%">
+                </div>
+
+                <a class="prev" onclick="plusSlides3(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides3(1)">&#10095;</a>
+            
+                <div class="caption-container">
+                    <p id="caption3"></p>
+                </div>
+            
+            
+                <div class="column">
+                    <img class="demo3 cursor" src="images/Checkbook-1.png" style="width:100%" onclick="currentSlide3(1)" alt="For this project, we wanted to showcase a login portal for a bank. The idea is that a customer would log into the bank's website to see their balance, transaction history, and add transactions manually. This was an added service for their customers to help them balance a checkbook. The user would make their own account, like 'Matt's Checkbook', and be able to log into it and make changes. Once the account had been created, they simply use the drop down and choose their account and login.">
+                </div>
+                <div class="column">
+                    <img class="demo3 cursor" src="images/Checkbook-2.png" style="width:100%" onclick="currentSlide3(2)" alt="Once logged in, the site will redirect the user to their 'Recent Transactions' page where they can also see their current balance. From here, they can take all of their deposites and any checks they wrote that day and put them into the app to be calculated and autobalanced for them.">
+                </div>
+                <div class="column">
+                    <img class="demo3 cursor" src="images/Checkbook-3.png" style="width:100%" onclick="currentSlide3(3)" alt="When adding a new transaction, the user can fill in the date, type (Deposite or Withdrawal), the amount, a small description like 'Walmart', and which account to put it under. This field is useful for those who have mutiple checkbooks, like a husband and wife using the same bank account.">
+                </div>
+                <div class="column">
+                    <img class="demo3 cursor" src="images/Checkbook-4.png" style="width:100%" onclick="currentSlide3(4)" alt="As you can see on the base HTML file, Django Templates were used on each page.">
+                </div>
+                <div class="column">
+                    <img class="demo3 cursor" src="images/Checkbook-5.png" style="width:100%" onclick="currentSlide3(5)" alt="This is a good example of Django Templates as the first templates extends the base page to build off of it.">
+                </div>
+                <div class="column">
+                    <img class="demo3 cursor" src="images/Checkbook-6.png" style="width:100%" onclick="currentSlide3(6)" alt="This is some of the code needed for the links and buttons to work. This is a great example of communication between the app and the database.">
+                </div>
+
+			</div>
+        </div>
+
+        
         <!--Contact section-->
         <div class="Row" id="Contact">
             <!--Contact image, left column-->
@@ -328,7 +393,7 @@
                     </div>
 
                     <div class="LP_Container">
-                        <img src="images/AppBuilder9000 - 7.png" onclick="openModal2();currentSlide(1)" class="hover-shadow cursor LPpics">
+                        <img src="images/Checkbook-1.png" onclick="openModal3();currentSlide3(1)" class="hover-shadow cursor LPpics">
                         <div class="LP_Title">Checkbook App</div>
                     </div>
 

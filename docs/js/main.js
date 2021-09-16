@@ -23,7 +23,7 @@ function currentSlide1(n) {
 
 
 function showSlides1(n) {
-    var slides = document.getElementsByClassName("mySlides3"); // This takes all elements with the class name "mySlides3" and stores them in the variable array "slides"
+    var slides = document.getElementsByClassName("mySlides1"); // This takes all elements with the class name "mySlides1" and stores them in the variable array "slides"
     var dots = document.getElementsByClassName("dot"); // This takes all elements with the class name "dot" and stores them in the variable array "dots"
     if (n > slides.length) {slideIndex1 = 1}; // If n (the number passed into the function) is greater than the length of the array "slides", the slideIndex is set to 1
     if (n < 1) {slideIndex1 = slides.length}; // If n (the number passed into the function) is less than 1, te slideIndex is set to the length of the array "slides"
@@ -149,4 +149,42 @@ for (i = 0; i < dots.length; i++) {
 slides[slideIndex4-1].style.display = "block";
 dots[slideIndex4-1].className += " active";
 captionText.innerHTML = dots[slideIndex4-1].alt;
+}
+
+// File Transfer Modal Section //
+function openModal3() {
+    document.getElementById("myModal3").style.display = "block";
+}
+
+function closeModal3() {
+    document.getElementById("myModal3").style.display = "none";
+}
+
+var slideIndex3 = 1;
+    showSlides3(slideIndex3);
+
+function plusSlides3(n) {
+    showSlides3(slideIndex3 += n);
+}
+
+function currentSlide3(n) {
+    showSlides3(slideIndex3 = n);
+}
+
+function showSlides3(n) {
+    var i;
+    var slides = document.getElementsByClassName("mySlides3");
+    var dots = document.getElementsByClassName("demo3");
+    var captionText = document.getElementById("caption3");
+    if (n > slides.length) {slideIndex3 = 1}
+    if (n < 1) {slideIndex3 = slides.length}
+    for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+    }
+    for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+    }
+    slides[slideIndex3-1].style.display = "block";
+    dots[slideIndex3-1].className += " active";
+    captionText.innerHTML = dots[slideIndex3-1].alt;
 }
