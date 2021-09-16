@@ -213,7 +213,7 @@ footer {
     background: rgba(255, 255, 255, 0.35); /* This creates a slightly transparent white background that's palced over the video in the background */    
 }
 
-.mySlides{
+.mySlides, .mySlides3{
     display: none; /* This prevents the images from being displayed, we will use JS to display these */
 }
 
@@ -525,9 +525,6 @@ body {
     cursor: pointer;
 }
 
-.mySlides {
-    display: none;
-}
 
 .cursor {
     cursor: pointer;
@@ -543,6 +540,7 @@ body {
     padding: 16px;
     margin-top: -50px;
     color: white;
+    background-color: #9999993a;
     font-weight: bold;
     font-size: 20px;
     transition: 0.6s ease;
@@ -553,6 +551,7 @@ body {
 
 /* Position the "next button" to the right */
 .next {
+    margin-right: 343px;
     right: 0;
     border-radius: 3px 0 0 3px;
 }
@@ -575,7 +574,6 @@ body {
 .caption-container {
     text-align: center;
     background-color: black;
-    padding: 2px 16px;
     color: white;
 }
 
@@ -594,7 +592,36 @@ body {
     height: 400px; /* Sets the height of all images */
     display: block; /* By specifying block display we can ensure our images are able to be centered */
     margin: auto auto; /* This centers all images */
+}
 
+.LPpics{
+    border-radius: 8px;
+    height: 140px;
+    display: inline;
+}
+
+.LP_Background{
+    margin-top: 5px;
+}
+
+.LP_Container{
+    height: auto; /* The height of the container is automatically adjusted based on the content it is displaying */
+    position: relative; /* This sets the container relative to its normal positioning */
+    display: inline-block;
+}
+
+.LP_Title{
+    color: white; 
+    padding-bottom: 5px;
+    position: absolute; /* This ensures the text is positioned within the image */
+    bottom: 0; /* This property sets the text at the bottom of the image */
+    width: 100%; /* The element covers the full width of the image */
+    text-align: center; /* The text is center aligned within the image */
+    font-family: Perpetua, Rockwell Extra Bold;
+    font-size: 20px; /* Font size is relative to the size of the viewport width */
+    background-color: rgba(0, 0, 0, 0.75); /* Gives a slightly transparent black background */
+    font-weight: bold;
+    border-radius: 0px 0px 8px 8px; /* Gives the text background rounded corners on the bottom left and right corners */
 }
 
 .active,

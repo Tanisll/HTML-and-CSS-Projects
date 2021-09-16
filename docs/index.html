@@ -58,44 +58,44 @@
                     <div id="Slideshow_Background"> 
                         <div id="Slideshow_Container">
                             <!-- Slide 1 of 5 -->
-                            <div class="mySlides fade">
-                                <img class="Slideshow_Images" src="images/profile.jpg" alt="Picture of yourself">
+                            <div class="mySlides3 fade">
+                                <img class="Slideshow_Images" src="images/profile.jpg" alt="Jacob Loveland">
                                 <div class="text">I'm available to assist you on your project!</div>
                             </div>
                             <!-- Slide 2 of 5 -->
-                            <div class="mySlides fade">
+                            <div class="mySlides3 fade">
                                 <img class="Slideshow_Images" src="images/HTML_CSS_and_JavaScript.jpeg" alt="HTML, CSS, and JS logos"> 
                                 <div class="text">I am a full-stack software developer,<br> trained in:<br>HTML, CSS, JavaScript,</div>
                             </div>
                             <!-- Slide 3 of 5 -->
-                            <div class="mySlides fade">
+                            <div class="mySlides3 fade">
                                 <img class="Slideshow_Images" src="images/Python.png" alt="Python logo">
                                 <div class="text">the popular programming language Python,</div>
                             </div>
                             <!-- Slide 4 of 5 -->
-                            <div class="mySlides fade">
+                            <div class="mySlides3 fade">
                                 <img class="Slideshow_Images" src="images/SQL_and_Database.jpg" alt="SQL logo"> 
                                 <div class="text">back end development, databases and SQL.</div>
                             </div>
                             <!-- Slide 5 of 5 -->
-                            <div class="mySlides fade">
-                                <img class="Slideshow_Images" src="images/Send_Email.png" alt="Replace with a picture of your choosing"> 
+                            <div class="mySlides3 fade">
+                                <img class="Slideshow_Images" src="images/Send_Email.png" alt="Email Image"> 
                                 <div class="text"><a class="white-text" onclick="openForm()" href="#Contact">Contact me now!</a></div> 
                             </div>
                             <!-- Previous and next buttons -->
-                            <a class="Previous" onclick="plusSlides(-1)">&#10094;</a>
-                            <a class="Next" onclick="plusSlides(1)">&#10095;</a>
+                            <a class="Previous" onclick="plusSlides1(-1)">&#10094;</a>
+                            <a class="Next" onclick="plusSlides1(1)">&#10095;</a>
                         </div>
                         <br> <!-- Adds a space between the slideshow images and the dots -->
         
                         <!-- Slideshow dots (these are another way for users to navigate through the slideshow) -->
                         <div style="text-align: center">
-                            <span class="dot" onclick="currentSlide(1)"></span>
-                            <span class="dot" onclick="currentSlide(2)"></span>
-                            <span class="dot" onclick="currentSlide(3)"></span> 
-                            <span class="dot" onclick="currentSlide(4)"></span> 
-                            <span class="dot" onclick="currentSlide(5)"></span> 
-                            <span class="dot" onclick="currentSlide(6)"></span> 
+                            <span class="dot" onclick="currentSlide1(1)"></span>
+                            <span class="dot" onclick="currentSlide1(2)"></span>
+                            <span class="dot" onclick="currentSlide1(3)"></span> 
+                            <span class="dot" onclick="currentSlide1(4)"></span> 
+                            <span class="dot" onclick="currentSlide1(5)"></span> 
+                            <span class="dot" onclick="currentSlide1(6)"></span> 
                         </div>
                     </div>
                 </div>
@@ -150,20 +150,157 @@
         </div>
 
         <!--Modal to make family picture larger-->
-        <div class="row2">
-			<div class="column">
-			</div>
-        </div>
         <div id="myModal" class="modal">
             <span class="close cursor" onclick="closeModal()">&times;</span>
             <div class="modal-content">
         
                 <div class="caption-container">
-                    <p id="caption"></p>
+                    <p id="caption">This is my beautiful family. My wife, Briana (who is currently pregnant with our 5th boy, Ronan) and my 4 boys (in order both in height and age): Tanison(8), Oliver(7), Brigham(4), and Milo(2).</p>
                 </div>
-                <img class="demo center2" src="images/Family_Picture2.jpg" onclick="currentSlide(1)" alt="This is my beautiful family. My wife, Briana (who is currently pregnant with our 5th boy, Ronan) and my 4 boys (in order both in height and age): Tanison, Oliver, Brigham, and Milo.">
+                <div class="column">
+                    <img class="center2" src="images/Family_Picture2.jpg" alt="">
+                </div>
             </div>
         </div>
+
+        <!--Modal to make AppBuilder9000 pictures larger-->
+        <div id="myModal2" class="modal">
+			<span class="close cursor" onclick="closeModal2()">&times;</span>
+			<div class="modal-content">
+		  
+                <div class="mySlides2">
+                    <div class="numbertext">1 / 8</div>
+                    <img src="images/AppBuilder9000 - 1.png" style="width:100%">
+                </div>
+            
+                <div class="mySlides2">
+                    <div class="numbertext">2 / 8</div>
+                    <img src="images/AppBuilder9000 - 2.png" style="width:100%">
+                </div>
+            
+                <div class="mySlides2">
+                    <div class="numbertext">3 / 8</div>
+                    <img src="images/AppBuilder9000 - 3.png" style="width:100%">
+                </div>
+                
+                <div class="mySlides2">
+                    <div class="numbertext">4 / 8</div>
+                    <img src="images/AppBuilder9000 - 4.png" style="width:100%">
+                </div>
+
+                <div class="mySlides2">
+                    <div class="numbertext">5 / 8</div>
+                    <img src="images/AppBuilder9000 - 5.png" style="width:100%">
+                </div>
+
+                <div class="mySlides2">
+                    <div class="numbertext">6 / 8</div>
+                    <img src="images/AppBuilder9000 - 6.png" style="width:100%">
+                </div>
+
+                <div class="mySlides2">
+                    <div class="numbertext">7 / 8</div>
+                    <img src="images/AppBuilder9000 - 7.png" style="width:100%">
+                </div>
+
+                <div class="mySlides2">
+                    <div class="numbertext">8 / 8</div>
+                    <img src="images/AppBuilder9000 - 8.png" style="width:100%">
+                </div>
+
+                <a class="prev" onclick="plusSlides2(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides2(1)">&#10095;</a>
+            
+                <div class="caption-container">
+                    <p id="caption2"></p>
+                </div>
+            
+            
+                <div class="column">
+                    <img class="demo2 cursor" src="images/AppBuilder9000 - 1.png" style="width:100%" onclick="currentSlide2(1)" alt="This is the main page that we built. All of our individual projects are displayed under the 'App Directory' section. My main contribution was the Blacksmithing Tools app indicated with the added red arrow.">
+                </div>
+                <div class="column">
+                    <img class="demo2 cursor" src="images/AppBuilder9000 - 2.png" style="width:100%" onclick="currentSlide2(2)" alt="When you click on the Blacksmithing Tools App image, it will take you to my home page. You will notice the fuctional Nav Bar up top.">
+                </div>
+                <div class="column">
+                    <img class="demo2 cursor" src="images/AppBuilder9000 - 3.png" style="width:100%" onclick="currentSlide2(3)" alt="This app helps the user access and edit the Blacksmithing Tools database. By clicking on the 'Add Tool' link at the top, the user will be presented with a functional (although not pretty) form where they can add a tool to the database.">
+                </div>
+                <div class="column">
+                    <img class="demo2 cursor" src="images/AppBuilder9000 - 4.png" style="width:100%" onclick="currentSlide2(4)" alt="The next page is the 'View Tools' page. Here, the user can quickly see all the tools in the database, listing only its name and price for convenience. If the user wants to learn more, they can simply click the 'Details' link to the right of each item. They can edit or even delete the item here as well.">
+                </div>
+                <div class="column">
+                    <img class="demo2 cursor" src="images/AppBuilder9000 - 5.png" style="width:100%" onclick="currentSlide2(5)" alt="If the user clicks the 'Details' link, the app will request and display all fields of that item in the database in a user friendly view.">
+                </div>
+                <div class="column">
+                    <img class="demo2 cursor" src="images/AppBuilder9000 - 6.png" style="width:100%" onclick="currentSlide2(6)" alt="All html pages use blocktags to link each of the pages together. This helps with code readability.">
+                </div>
+                <div class="column">
+                    <img class="demo2 cursor" src="images/AppBuilder9000 - 7.png" style="width:100%" onclick="currentSlide2(7)" alt="Here you can see the creation and definition of the Tool class as well as the list of options for the 'use' attribute.">
+                </div>
+                <div class="column">
+                    <img class="demo2 cursor" src="images/AppBuilder9000 - 8.png" style="width:100%" onclick="currentSlide2(8)" alt="This image is a screenshot of the functions needed for each link and button to work.">
+                </div>
+
+			</div>
+        </div>
+
+        <!--Modal to make File Transfer GUI pictures larger-->
+        <div id="myModal4" class="modal">
+			<span class="close cursor" onclick="closeModal4()">&times;</span>
+			<div class="modal-content">
+		  
+                <div class="mySlides4">
+                    <div class="numbertext">1 / 5</div>
+                    <img src="images/FileTransfer-1.png" style="width:100%">
+                </div>
+            
+                <div class="mySlides4">
+                    <div class="numbertext">2 / 5</div>
+                    <img src="images/FileTransfer-2.png" style="width:100%">
+                </div>
+            
+                <div class="mySlides4">
+                    <div class="numbertext">3 / 5</div>
+                    <img src="images/FileTransfer-3.png" style="width:100%">
+                </div>
+                
+                <div class="mySlides4">
+                    <div class="numbertext">4 / 5</div>
+                    <img src="images/FileTransfer-4.png" style="width:100%">
+                </div>
+
+                <div class="mySlides4">
+                    <div class="numbertext">5 / 5</div>
+                    <img src="images/FileTransfer-5.png" style="width:100%">
+                </div>
+
+                <a class="prev" onclick="plusSlides4(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides4(1)">&#10095;</a>
+            
+                <div class="caption-container">
+                    <p id="caption4"></p>
+                </div>
+            
+            
+                <div class="column">
+                    <img class="demo4 cursor" src="images/FileTransfer-1.png" style="width:100%" onclick="currentSlide4(1)" alt="In this project, the end user requested a user friendly program that would transfer any and all files that were either created or modified in the last 24 hours from one folder to another. They were having to go through all their files manually at the end of each day. This program was able to save them a lot of time and money.">
+                </div>
+                <div class="column">
+                    <img class="demo4 cursor" src="images/FileTransfer-2.png" style="width:100%" onclick="currentSlide4(2)" alt="The program has two folder selectors. The 'Source' folder, and the 'Destination' folder. I included a very easy-to-use Browse button to help in selecting those folders. This prevents and user error when typing out the files path, and saves time in the proccess.">
+                </div>
+                <div class="column">
+                    <img class="demo4 cursor" src="images/FileTransfer-3.png" style="width:100%" onclick="currentSlide4(3)" alt="The program consists of three main .py files. The function file, the gui file, and the main file. Here you can see how my buttons work as well as how the program determines the age or the last modified date of the files within the chosen directory.">
+                </div>
+                <div class="column">
+                    <img class="demo4 cursor" src="images/FileTransfer-4.png" style="width:100%" onclick="currentSlide4(4)" alt="The gui file addresses the cosmetics of the program. Using the grid system, I was able to map out each field and button to look as clean as possible.">
+                </div>
+                <div class="column">
+                    <img class="demo4 cursor" src="images/FileTransfer-5.png" style="width:100%" onclick="currentSlide4(5)" alt="The last file is the main file. Its' main purpose is to create the window itself and launch all the functions and gui settings from the other two files. To use the program, this would be the file that the end user would 'Double-Click'. In all, this was a simple program that did not take long to create but it saved the company time and money. The concepts learned here are basic but the application of them in future projects have great potential!">
+                </div>
+
+			</div>
+        </div>
+
 
         <!--Contact section-->
         <div class="Row" id="Contact">
@@ -177,9 +314,26 @@
             <!-- Project Space, right column-->
             <div class="Column_1 Column_tall">
                 <h1>Live Project</h1>
-                <p class="center">
-                    This space is reserved space for my future projects.
-                </p>
+                <p class="center">Click on any image to see screenshot examples of my work!</p>
+                <div class="LP_Background">
+                    
+                    <div class="LP_Container">
+                        <img src="images/AppBuilder9000 - 1.png" onclick="openModal2();currentSlide2(1)" class="hover-shadow cursor LPpics">
+                        <div class="LP_Title">AppBuilder9000</div>
+                    </div>
+
+                    <div class="LP_Container">
+                        <img src="images/FileTransfer-1.png" onclick="openModal4();currentSlide4(1)" class="hover-shadow cursor LPpics">
+                        <div class="LP_Title">File Transfer GUI</div>
+                    </div>
+
+                    <div class="LP_Container">
+                        <img src="images/AppBuilder9000 - 7.png" onclick="openModal2();currentSlide(1)" class="hover-shadow cursor LPpics">
+                        <div class="LP_Title">Checkbook App</div>
+                    </div>
+
+                </div>
+
             </div>
             <!--Contact form, right column-->
             <div id="Contact">
