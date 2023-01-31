@@ -188,3 +188,41 @@ function showSlides3(n) {
     dots[slideIndex3-1].className += " active";
     captionText.innerHTML = dots[slideIndex3-1].alt;
 }
+
+// Random User Generator Modal Section //
+function openModal5() {
+    document.getElementById("myModal5").style.display = "block";
+}
+
+function closeModal5() {
+    document.getElementById("myModal5").style.display = "none";
+}
+
+var slideIndex5 = 1;
+    showSlides5(slideIndex5);
+
+function plusSlides5(n) {
+    showSlides5(slideIndex5 += n);
+}
+
+function currentSlide5(n) {
+    showSlides5(slideIndex5 = n);
+}
+
+function showSlides5(n) {
+    var i;
+    var slides = document.getElementsByClassName("mySlides5");
+    var dots = document.getElementsByClassName("demo5");
+    var captionText = document.getElementById("caption5");
+    if (n > slides.length) {slideIndex5 = 1}
+    if (n < 1) {slideIndex5 = slides.length}
+    for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+    }
+    for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+    }
+    slides[slideIndex5-1].style.display = "block";
+    dots[slideIndex5-1].className += " active";
+    captionText.innerHTML = dots[slideIndex5-1].alt;
+}

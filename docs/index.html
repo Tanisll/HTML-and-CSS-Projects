@@ -362,7 +362,70 @@
 			</div>
         </div>
 
-        
+        <!--Random User Generator Modal-->
+        <div id="myModal5" class="modal">
+			<span class="close cursor" onclick="closeModal5()">&times;</span>
+			<div class="modal-content">
+		  
+                <div class="mySlides5">
+                    <div class="numbertext">1 / 6</div>
+                    <img src="images/Random User Generator 1.png" style="width:100%">
+                </div>
+            
+                <div class="mySlides5">
+                    <div class="numbertext">2 / 6</div>
+                    <img src="images/Random User Generator 2.png" style="width:100%">
+                </div>
+            
+                <div class="mySlides5">
+                    <div class="numbertext">3 / 6</div>
+                    <img src="images/Random User Generator 3.png" style="width:100%">
+                </div>
+                
+                <div class="mySlides5">
+                    <div class="numbertext">4 / 6</div>
+                    <img src="images/Random User Generator 4.png" style="width:100%">
+                </div>
+
+                <div class="mySlides5">
+                    <div class="numbertext">5 / 6</div>
+                    <img src="images/Random User Generator 5.png" style="width:100%">
+                </div>
+
+                <div class="mySlides5">
+                    <div class="numbertext">6 / 6</div>
+                    <img src="images/Random User Generator 6.png" style="width:100%">
+                </div>
+
+                <a class="prev" onclick="plusSlides5(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides5(1)">&#10095;</a>
+            
+                <div class="caption-container">
+                    <p id="caption5"></p>
+                </div>
+            
+            
+                <div class="column">
+                    <img class="demo5 cursor" src="images/Random User Generator 1.png" style="width:100%" onclick="currentSlide3(1)" alt="For this project, I wanted to make a small and simple app that generates a random user. Using the API randomuser.me, I passed there data points into my UI to display them in a way that would resemble something that you might see in a dating app.">
+                </div>
+                <div class="column">
+                    <img class="demo5 cursor" src="images/Random User Generator 2.png" style="width:100%" onclick="currentSlide3(2)" alt="When the API passes a female generated user, the UI will change to a more feminine look. By adding an event to the button, I used v-on:click to call upon the method getUser, which pulls from the API to get a new randomly generated user.">
+                </div>
+                <div class="column">
+                    <img class="demo5 cursor" src="images/Random User Generator 3.png" style="width:100%" onclick="currentSlide3(3)" alt="When a male's data is passed through the API, the interface shows a more masculine appearance.">
+                </div>
+                <div class="column">
+                    <img class="demo5 cursor" src="images/Random User Generator 4.png" style="width:100%" onclick="currentSlide3(4)" alt="This is my simple JS file containing my methods and datapoints. This is what the getUser method looks like. The initial data point is so that the script has something to display when the page loads. Using the console.log(results), i was able to see what type of datapoints are being passed to me via the API. Then I just grabbed the ones I wanted to use.">
+                </div>
+                <div class="column">
+                    <img class="demo5 cursor" src="images/Random User Generator 5.png" style="width:100%" onclick="currentSlide3(5)" alt="This is my very simple html file. There's nothing special going on here. Only that I had to use the VueJS declaritive rendering by using the double brackets, vs React's interpolation using single brackets. I also had to use something called the V-bind directive, which I had to learn about during this project, in order to use the images that the API passed to me. Another thing to note was the fact that I like to put my scripts at the bottom of the page as opposed to the top. This can help with page loading speed, I have found.">
+                </div>
+                <div class="column">
+                    <img class="demo5 cursor" src="images/Random User Generator 6.png" style="width:100%" onclick="currentSlide3(6)" alt="The last part of my project is my CSS stylesheet. I didn't do anything fancy here. Often times the most simple look will actually look the best. This image is here mostly to show how I format my stylesheets.">
+                </div>
+
+			</div>
+        </div>
         <!--Contact section-->
         <div class="Row" id="Contact">
             <!--Contact image, left column-->
@@ -392,10 +455,15 @@
                         <img src="images/Checkbook-1.png" onclick="openModal3();currentSlide3(1)" class="hover-shadow cursor LPpics">
                         <div class="LP_Title">Checkbook App</div>
                     </div>
+                    <div class="LP_Container">
+                        <img src="images/Random User Generator 1.png" onclick="openModal5();currentSlide5(1)" class="hover-shadow cursor LPpics">
+                        <div class="LP_Title">Random User Gen</div>
+                    </div>
 
                 </div>
 
             </div>
+            
             <!--Contact form, right column-->
             <div id="Contact">
                 <button onclick="openForm()" class="Pop_Up_Button">CONTACT</button>
